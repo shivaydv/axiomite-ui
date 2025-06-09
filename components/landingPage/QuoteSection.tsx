@@ -18,7 +18,7 @@ const itemVariants = {
 
 const QuoteSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-250px" });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <div className="px-4 py-20">

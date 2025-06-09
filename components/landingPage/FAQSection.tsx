@@ -154,7 +154,7 @@ export default function FAQSection() {
   ];
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-250px" });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section
@@ -179,7 +179,7 @@ export default function FAQSection() {
         </p>
       </motion.div>
 
-      <div className="mx-auto max-w-2xl space-y-2">
+      <div className="mx-auto max-w-2xl space-y-2 px-2 sm:px-6 lg:px-8">
         {faqs.map((faq, index) => (
           <FAQItem key={index} {...faq} index={index} isInView={isInView} />
         ))}

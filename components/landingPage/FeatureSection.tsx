@@ -31,7 +31,7 @@ const features = [
 ];
 const FeatureSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-250px" });
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section className="py-16 px-4 bg-fd-background text-fd-foreground" ref={ref}>
@@ -56,7 +56,7 @@ const FeatureSection = () => {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{
               duration: 0.4,
-              delay: isInView ? 0.5 + i * 0.1 : 0,
+              delay: isInView ? 0.5+ i * 0.1 : 0,
               ease: "easeOut",
             }}
             key={i}
