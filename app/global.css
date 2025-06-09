@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import "fumadocs-ui/css/black.css";
+@import "fumadocs-ui/css/preset.css";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+.primary-gradient {
+  @apply bg-gradient-to-r from-[#ff6b4a] to-rose-400;
+}
+
+@layer utilities {
+  #nd-sidebar p {
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-fd-secondary-foreground);
+  }
+  #nd-sidebar-mobile p {
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+}
+
+:root {
+  --color-fd-background: #fafaf7;
+  --color-fd-foreground: #1f1f1f;
+  --color-fd-primary: #ff6b4a;
+  --color-fd-accent: #f1f0eb;
+  --color-fd-accent-foreground: #1f1f1f;
+  --color-fd-card: #ffffff;
+  --color-fd-card-foreground: #1f1f1f;
+  --color-fd-muted: #1f1f1f10;
+  --color-fd-muted-foreground: #595959;
+  --color-fd-secondary: #ecebe6;
+  --color-fd-secondary-foreground: #1f1f1f;
+  --color-fd-popover: #ffffff;
+  --color-fd-popover-foreground: #1f1f1f;
+  --color-fd-border: #e2e2dc;
+}
+
+.dark {
+  --color-fd-background: #111111;
+  --color-fd-foreground: #ededed;
+  --color-fd-primary: #ff6b4a;
+  --color-fd-accent: #1c1c1c;
+  --color-fd-accent-foreground: #f2f2f2;
+  --color-fd-card: #181818;
+  --color-fd-card-foreground: #ededed;
+  --color-fd-muted: #ededed12;
+  --color-fd-muted-foreground: #a0a0a0;
+  --color-fd-secondary: #1c1c1c;
+  --color-fd-secondary-foreground: #f2f2f2;
+  --color-fd-popover: #1a1a1a;
+  --color-fd-popover-foreground: #ededed;
+  --color-fd-border: #2e2e2e;
+}

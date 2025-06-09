@@ -1,0 +1,19 @@
+{
+    "title": "Axiomite Docs",
+    "description": "Documentation for Axiomite, a tool for building and managing AI agents.",
+    "pages":[
+      
+     
+      "---Get Started---",
+      "index",
+      "...(Installation)",
+      "---Components---",
+      "...components",
+      "---Blocks---",
+      "...blocks",
+      "---Templates---",
+      "...templates",
+      "---Backgrounds---",
+      "...backgrounds"
+    ]
+  }
