@@ -5,6 +5,7 @@ import { motion } from "motion/react";
 import { ArrowUpRight, ChevronRight } from "lucide-react";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa6";
+import Image from "next/image";
 
 export default function HeroSection() {
   return (
@@ -35,7 +36,7 @@ export default function HeroSection() {
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.5, delay: 0 }}
             className="text-balance font-semibold bg-gradient-to-tl from-fd-primary/10 via-fd-foreground/85 to-fd-foreground/100 bg-clip-text text-center text-4xl tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl"
           >
             Code Less. Build More.
@@ -45,7 +46,7 @@ export default function HeroSection() {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5,delay: 0 }}
             className="mx-auto mt-6 max-w-2xl text-center text-lg text-fd-muted-foreground"
           >
             A modern UI component library designed to help developers create
@@ -89,21 +90,15 @@ export default function HeroSection() {
             className="relative mx-auto mt-16 max-w-4xl"
           >
             <div className="overflow-hidden rounded-xl border border-fd-border/40 bg-background/50 shadow-xl backdrop-blur-sm">
-              {/* <div className="flex h-10 items-center border-b border-fd-border/40 bg-fd-muted/50 px-4">
-                <div className="flex space-x-2">
-                  <div className="h-3 w-3 rounded-full bg-red-500"></div>
-                  <div className="h-3 w-3 rounded-full bg-yellow-500"></div>
-                  <div className="h-3 w-3 rounded-full bg-green-500"></div>
-                </div>
-                <div className="mx-auto flex items-center rounded-md bg-fd-background/50 px-3 py-1 text-xs text-fd-muted-foreground">
-                  https://axiomite.vercel.app
-                </div>
-              </div> */}
               <div className="relative">
-                <img
-                  src="https://i.postimg.cc/0yk8Vz7t/dashboard.webp"
+                <Image
+                  src="/images/dashboard.png"
                   alt="Dashboard Preview"
-                  className="w-full"
+                  className="w-full object-cover"
+                  priority
+                  quality={60}
+                  width={800}
+                  height={500}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-fd-background to-transparent opacity-0"></div>
               </div>

@@ -1,5 +1,12 @@
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
-import { LayoutPanelTop, Star, Sparkles, Users, SunDim, Book } from "lucide-react";
+import {
+  LayoutPanelTop,
+  Star,
+  Sparkles,
+  Users,
+  SunDim,
+  Book,
+} from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
 import Logo from "@/components/Logo";
 import ThemeToggle from "@/components/ThemeToggle";

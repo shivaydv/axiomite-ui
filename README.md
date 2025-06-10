@@ -1,45 +1,18 @@
-# myui
+# Axiomite UI
 
-This is a Next.js application generated with
-[Create Fumadocs](https://github.com/fuma-nama/fumadocs).
+**Axiomite UI** is a modern, developer-friendly React component library built to help you ship beautiful and consistent UIs faster.
 
-Run development server:
+![Open Graph Image](/app/opengraph-image.png)
 
-```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
-```
 
-Open http://localhost:3000 with your browser to see the result.
 
-## Explore
+## 🚀 Features
 
-In the project, you can see:
-
-- `lib/source.ts`: Code for content source adapter, [`loader()`](https://fumadocs.dev/docs/headless/source-api) provides the interface to access your content.
-- `app/layout.config.tsx`: Shared options for layouts, optional but preferred to keep.
-
-| Route                     | Description                                            |
-| ------------------------- | ------------------------------------------------------ |
-| `app/(home)`              | The route group for your landing page and other pages. |
-| `app/docs`                | The documentation layout and pages.                    |
-| `app/api/search/route.ts` | The Route Handler for search.                          |
-
-### Fumadocs MDX
-
-A `source.config.ts` config file has been included, you can customise different options like frontmatter schema.
-
-Read the [Introduction](https://fumadocs.dev/docs/mdx) for further details.
-
-## Learn More
-
-To learn more about Next.js and Fumadocs, take a look at the following
-resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [Fumadocs](https://fumadocs.vercel.app) - learn about Fumadocs
+- ⚡ **Pre-built UI components** – Ready-to-use, styled components for rapid development.
+- 🎨 **Design system consistency** – Maintain uniformity across projects.
+- 💎 **Customizable** – Easily override styles with Tailwind CSS or your own tokens.
+- 🔧 **Component blocks & templates** – Start fast with built-in page sections and full layouts.
+- 🧱 **Composable** – Flexible building blocks, not rigid structures.
+- 🌙 **Dark mode support** – Built-in support for theme switching.
+- 🧪 **Well-tested** – Reliable components with consistent design.
+- 📄 **MDX-powered docs** – Easy-to-navigate documentation built with Fumadocs.
