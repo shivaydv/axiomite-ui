@@ -6,7 +6,7 @@ import { TextScroll } from "@/components/landingPage/TextScrollSection";
 
 export default function HomePage() {
   return (
-    <main className=" ">
+    <main className="">
       <HeroSection />
       <TextScroll
         text="Dark Mode Ready • Easy to Use • Customizable Components • Minimal Design • Built with Tailwind CSS • TypeScript Support • Blazing Fast UI • Copy-Paste Friendly • Open Source • Designed For Developer • Lightweight and Scalable • "
