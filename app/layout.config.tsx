@@ -8,8 +8,8 @@ import {
   Book,
 } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
-import Logo from "@/components/Logo";
-import ThemeToggle from "@/components/ThemeToggle";
+import Logo from "@/components/layout/Logo";
+import ThemeToggle from "@/components/layout/ThemeToggle";
 
 export const baseOptions: BaseLayoutProps = {
   nav: {

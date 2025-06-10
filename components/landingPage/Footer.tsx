@@ -1,5 +1,5 @@
 "use client";
-import Logo from "@/components/Logo";
+import Logo from "@/components/layout/Logo";
 import Link from "next/link";
 import { motion, useInView } from "motion/react";
 import { useRef } from "react";

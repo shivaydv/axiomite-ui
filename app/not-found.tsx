@@ -1,4 +1,4 @@
-import Logo from "@/components/Logo";
+import Logo from "@/components/layout/Logo";
 import React from "react";
 
 export default function NotFound() {
