@@ -5,7 +5,7 @@ import { promises as fs } from "fs";
 import { registry } from "../registry/index";
 import { registryItemFileSchema } from "../registry/schema";
 
-const REGISTRY_BASE_PATH = "registry/";
+const REGISTRY_BASE_PATH = "registry";
 const PUBLIC_FOLDER_BASE_PATH = "public/r";
 const COMPONENT_FOLDER_PATH = "components";
 
