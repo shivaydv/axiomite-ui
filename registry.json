@@ -1,0 +1,52 @@
+{
+  "0": {
+    "name": "index",
+    "type": "registry:style",
+    "dependencies": [
+      "tw-animate-css",
+      "class-variance-authority",
+      "lucide-react"
+    ],
+    "registryDependencies": [
+      "utils"
+    ],
+    "files": [],
+    "cssVars": {}
+  },
+  "1": {
+    "name": "Button",
+    "type": "registry:component",
+    "files": [
+      {
+        "path": "components/button.tsx",
+        "type": "registry:component"
+      }
+    ]
+  },
+  "items": [
+    {
+      "name": "index",
+      "type": "registry:style",
+      "dependencies": [
+        "tw-animate-css",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "utils"
+      ],
+      "files": [],
+      "cssVars": {}
+    },
+    {
+      "name": "Button",
+      "type": "registry:component",
+      "files": [
+        {
+          "path": "components/button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    }
+  ]
+}
