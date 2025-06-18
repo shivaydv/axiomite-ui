@@ -1,5 +1,6 @@
 "use client"
 
+import { cn } from "@/lib/utils";
 import { useId } from "react";
 
 const Logo = ({
@@ -23,9 +24,9 @@ const Logo = ({
     );
   }
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
-      <LogoIcon className={`h-6 w-6 shrink-0  ${iconClassName}`} />
-      <span className={`text-xl font-bold shrink-0 ${textClassName}`}>
+    <div className={`flex items-center  gap-1 ${className}`}>
+      <LogoIcon className={`h-6 w-6   ${iconClassName}`} />
+      <span className={`text-xl mb-[2px] font-semibold shrink-0  ${textClassName}`}>
         Axiomite UI
       </span>
     </div>
@@ -39,7 +40,10 @@ export const LogoIcon = ({ className }: { className?: string }) => {
       id="logo-64"
       width="80"
       height="80"
-      className={`h-8 w-8 ${className}`}
+      className={cn(
+        "h-8 w-8 shrink-0",
+        className
+      )}
       viewBox="0 0 50 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

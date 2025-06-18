@@ -14,17 +14,15 @@
     cursor: pointer;
   }
 }
-
-.primary-gradient {
-  @apply bg-gradient-to-r from-[#ff6b4a] to-rose-400;
-}
-
 @layer utilities {
+
+  #nd-sidebar{
+    border: none;
+  }
   #nd-sidebar p {
     font-weight: 600;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
-    color: var(--color-fd-secondary-foreground);
+    margin-top: .8rem;
+    margin-bottom: 0.5rem;    
   }
   #nd-sidebar-mobile p {
     font-weight: 600;
@@ -32,11 +30,34 @@
   }
 }
 
+.primary-gradient {
+  @apply bg-gradient-to-r from-[#ff6b4a] to-rose-400;
+}
+
+
 :root {
-  /* === shadcn base === */
+  /* === synced FumaDocs colors === */
+  --color-fd-background: var(--background);
+  --color-fd-foreground: var(--foreground);
+  --color-fd-primary: var(--primary);
+  --color-fd-accent: var(--accent);
+  --color-fd-accent-foreground: var(--accent-foreground);
+  --color-fd-card: var(--card);
+  --color-fd-card-foreground: var(--card-foreground);
+  --color-fd-muted: #1f1f1f10; 
+  --color-fd-muted-foreground: var(--muted-foreground);
+  --color-fd-secondary: var(--secondary);
+  --color-fd-secondary-foreground: var(--secondary-foreground);
+  --color-fd-popover: var(--popover);
+  --color-fd-popover-foreground: var(--popover-foreground);
+  --color-fd-border: var(--border);
+}
+
+
+:root {
   --radius: 0.625rem;
 
-  --primary: #ff6b4a; /* use fuma primary */
+  --primary: #ff6b4a; 
   --primary-foreground: #ffffff;
 
   --background: #fafaf7;
@@ -71,26 +92,10 @@
   --sidebar-border: #e2e2dc;
   --sidebar-ring: #cfcfcf;
 
-  /* === synced FumaDocs colors === */
-  --color-fd-background: var(--background);
-  --color-fd-foreground: var(--foreground);
-  --color-fd-primary: var(--primary);
-  --color-fd-accent: var(--accent);
-  --color-fd-accent-foreground: var(--accent-foreground);
-  --color-fd-card: var(--card);
-  --color-fd-card-foreground: var(--card-foreground);
-  --color-fd-muted: #1f1f1f10; /* optionally keep original transparency */
-  --color-fd-muted-foreground: var(--muted-foreground);
-  --color-fd-secondary: var(--secondary);
-  --color-fd-secondary-foreground: var(--secondary-foreground);
-  --color-fd-popover: var(--popover);
-  --color-fd-popover-foreground: var(--popover-foreground);
-  --color-fd-border: var(--border);
 }
 
 .dark {
-  /* === shadcn dark === */
-  --primary: #ff6b4a; /* still Fuma primary */
+  --primary: #ff6b4a; 
   --primary-foreground: #000000;
 
   --background: #111111;
@@ -124,22 +129,6 @@
   --sidebar-accent-foreground: #f2f2f2;
   --sidebar-border: #2e2e2e;
   --sidebar-ring: #5a5a5a;
-
-  /* === synced FumaDocs dark colors === */
-  --color-fd-background: var(--background);
-  --color-fd-foreground: var(--foreground);
-  --color-fd-primary: var(--primary);
-  --color-fd-accent: var(--accent);
-  --color-fd-accent-foreground: var(--accent-foreground);
-  --color-fd-card: var(--card);
-  --color-fd-card-foreground: var(--card-foreground);
-  --color-fd-muted: #ededed12; /* original transparency retained */
-  --color-fd-muted-foreground: var(--muted-foreground);
-  --color-fd-secondary: var(--secondary);
-  --color-fd-secondary-foreground: var(--secondary-foreground);
-  --color-fd-popover: var(--popover);
-  --color-fd-popover-foreground: var(--popover-foreground);
-  --color-fd-border: var(--border);
 }
 
 
@@ -181,11 +170,3 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* @layer base {
-  * {
-    @apply border-border outline-ring/50;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-} */

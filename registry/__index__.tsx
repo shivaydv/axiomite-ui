@@ -6,38 +6,4 @@
 import * as React from "react"
 
 export const Index: Record<string, any> = {
-  "Button": {
-    name: "Button",
-    description: "",
-    type: "registry:component",
-    registryDependencies: undefined,
-    files: [{
-      path: "axiomite-ui/button.tsx",
-      type: "registry:component",
-      target: ""
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/axiomite-ui/button.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-    meta: undefined,
-  },
-  "Button-demo": {
-    name: "Button-demo",
-    description: "",
-    type: "registry:component",
-    registryDependencies: undefined,
-    files: [{
-      path: "demo/button-demo.tsx",
-      type: "registry:component",
-      target: ""
-    }],
-    component: React.lazy(async () => {
-      const mod = await import("@/registry/demo/button-demo.tsx")
-      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
-      return { default: mod.default || mod[exportName] }
-    }),
-    meta: undefined,
-  },
   }

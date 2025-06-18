@@ -10,39 +10,39 @@ interface ComponentWrapperProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export const ComponentWrapper = ({
-  className,
   children,
   name,
 }: ComponentWrapperProps) => {
   const [key, setKey] = React.useState(0);
+  const [isRotating, setIsRotating] = React.useState(false);
+
+  const handleClick = () => {
+    setIsRotating(true);
+    setKey((prev) => prev + 1);
+    setTimeout(() => setIsRotating(false), 800);
+  };
 
   return (
-    <div
-      className={cn(
-        "max-w-screen relative rounded-xl border bg-background",
-        className,
-      )}
-      key={key}
-    >
-      {/* <div
-        className={cn(
-          `absolute inset-0 size-full`,
-          `bg-[radial-gradient(#00000022_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff22_1px,transparent_1px)]`,
-          "lab-bg pointer-events-none [background-size:16px_16px]",
-        )}
-      /> */}
-      <div className="flex items-center justify-end gap-2 p-4">
-        {/* <OpenInV0Button url={`https://magicui.design/r/${name}.json`} /> */}
+    <div key={key} className="relative rounded-md ">
+      <div className="flex items-center justify-end gap-2 p-4 absolute right-0">
         <Button
-          onClick={() => setKey((prev) => prev + 1)}
+          onClick={handleClick}
           className="flex items-center rounded-lg px-3 py-1"
           variant="ghost"
+          title="Restart Component"
+          aria-label="Restart Component"
         >
-          <RotateCcw aria-label="restart-btn" size={16} />
+          <RotateCcw 
+            aria-label="restart-btn" 
+            size={16} 
+            className={cn(
+              isRotating && "animate-[spin_0.4s_linear_reverse_infinite]"
+            )}
+          />
         </Button>
       </div>
 
-      <div className="flex min-h-[350px] w-full items-center justify-center p-10">
+      <div className="flex min-h-[350px] w-full items-center justify-center p-10 ">
         {children}
       </div>
     </div>

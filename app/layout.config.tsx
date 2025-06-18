@@ -9,17 +9,17 @@ import {
 } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
 import Logo from "@/components/layout/Logo";
-import ThemeToggle from "@/components/layout/ThemeToggle";
+// import ThemeToggle from "@/components/layout/ThemeToggle";
 
 export const baseOptions: BaseLayoutProps = {
   nav: {
-    title: <Logo iconClassName="bg-red-30" />,
+    title: <Logo />,
     transparentMode: "always",
   },
   githubUrl: "https://github.com/shivaydv/axiomite-ui",
   searchToggle: { enabled: true },
   themeSwitch: {
-    component: <ThemeToggle />,
+    // component: <ThemeToggle />,
     mode: "light-dark",
     enabled: true,
   },
@@ -62,15 +62,15 @@ export const baseOptions: BaseLayoutProps = {
       text: "Twitter",
       url: "https://x.com/Shivay1256",
     },
-    {
-      type: "custom",
-      children: (
-        <div className="max-lg:hidden">
-          <ThemeToggle />
-        </div>
-      ),
-      on: "menu",
-      secondary: true,
-    },
+    // {
+    //   type: "custom",
+    //   children: (
+    //     <div className="max-lg:hidden">
+    //       <ThemeToggle />
+    //     </div>
+    //   ),
+    //   on: "menu",
+    //   secondary: true,
+    // },
   ],
 };

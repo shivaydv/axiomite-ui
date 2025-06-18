@@ -11,44 +11,45 @@ export default function Layout({ children }: { children: ReactNode }) {
     
       <DocsLayout
         {...baseOptions}
+        
         tree={source.pageTree}
         searchToggle={{ enabled: true }}
         themeSwitch={{
           enabled: true,
-          component: (
-            <div className="max-md:hidden lg:hidden">
-              <ThemeToggle />
-            </div>
-          ),
+          // component: (
+          //   <div className="max-md:hidden lg:hidden">
+          //     <ThemeToggle />
+          //   </div>
+          // ),
           mode: "light-dark",
+          
         }}
         nav={{
           ...baseOptions.nav,
           title: <Logo  />,
-          mode: "top",
+
+          // mode: "top",
         }}
         sidebar={{
           defaultOpenLevel:2,
-          footer: (
-            <div className="flex items-center lg:justify-center justify-end   w-full">
-              {/* <Logo className="hidden md:block" /> */}
-              <div className="text-xs font-semibold text-fd-muted-foreground tracking-wide">
-                Built with ❤️ by{" "}
-                <a href="https://x.com/Shivay1256" className="underline font-semibold" >
-                  Shiva
-                </a>
-              </div>
-            </div>
-          ),
-
-          children: <h1 className="text-2xl font-bold">Documentation</h1>,
+          // footer: (
+          //   <div className="flex items-center lg:justify-center justify-end   w-full">
+          //     {/* <Logo className="hidden md:block" /> */}
+          //     <div className="text-xs font-semibold text-fd-muted-foreground tracking-wide">
+          //       Built with ❤️ by{" "}
+          //       <a href="https://x.com/Shivay1256" className="underline font-semibold" >
+          //         Shiva
+          //       </a>
+          //     </div>
+          //   </div>
+          // ),
           banner: (
             <div className="md:hidden items-center  justify-between flex border-b pb-4 ">
               <Logo />
-              <ThemeToggle />
+              {/* <ThemeToggle /> */}
             </div>
           ),
-          collapsible: false,
+          collapsible: true,
         }}
       >
         {children}
